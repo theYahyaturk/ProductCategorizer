@@ -2,6 +2,18 @@
 
 A standalone Streamlit seller utility that uses the existing trained category and subcategory models to help identify the most relevant ecommerce listing category. The original `.pkl` files are loaded locally and are not retrained or modified.
 
+## First ML model and training data
+
+The first version of the classifier was trained on the Alifeo e-commerce product categorization dataset, containing 100K+ product records. Using more product examples helps the model learn a wider range of product titles, descriptions, categories, and subcategories.
+
+The training pipeline cleans the product text, creates TF-IDF features, and trains separate LinearSVC models for category and subcategory prediction. The trained models and vectorizers are saved as `.pkl` files and loaded by the Streamlit app.
+
+- Kaggle dataset: [Alifeo E-commerce Product Categorization Dataset](https://www.kaggle.com/datasets/alifeo/alifeo-e-commerce-product-categorization-dataset)
+- Google Colab training notebook: [Open `ecommerce.ipynb` in Google Colab](https://colab.research.google.com/github/theYahyaturk/category/blob/main/ecommerce.ipynb)
+- Local notebook file: [`ecommerce.ipynb`](ecommerce.ipynb)
+
+The current deployed app uses the saved model artifacts; it does not retrain the models during startup.
+
 ## Project structure
 
 ```text
