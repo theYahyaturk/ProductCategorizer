@@ -11,6 +11,7 @@ The training pipeline cleans the product text, creates TF-IDF features, and trai
 - Kaggle dataset: [Alifeo E-commerce Product Categorization Dataset](https://www.kaggle.com/datasets/alifeo/alifeo-e-commerce-product-categorization-dataset)
 - Google Colab training notebook: [Open `ecommerce.ipynb` in Google Colab](https://colab.research.google.com/github/theYahyaturk/category/blob/main/ecommerce.ipynb)
 - Local notebook file: [`ecommerce.ipynb`](ecommerce.ipynb)
+live : https://category-ers8pwt9x3frhukcral63t.streamlit.app/
 
 The current deployed app uses the saved model artifacts; it does not retrain the models during startup.
 
